@@ -2,7 +2,7 @@
 @import url('./toss-face.css');
 
 :root {
-  --main-background: rgba(41, 47, 51, 1);
+  --main-background: #d7c5c5;
   --main-color: #a9abad;
   --playground-background: linear-gradient( 0deg, 
     var(--main-background) 0%, 
@@ -20,7 +20,7 @@ html {
 }
 
 html, body {
-  font-size: 36px;
+  font-size: 20px;
   color: var(--main-color);
   background: var(--main-background);
   margin: 0;
