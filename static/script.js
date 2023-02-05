@@ -12,7 +12,7 @@ function getAbsoluteTop(elem) {
   return getAbsolutePosition(elem).top
 }
 
-(function() {
+(function () {
   var $body = document.body;
   var $pgHolder = document.getElementById("playground-holder");
   var $pg = document.getElementById("playground");
@@ -20,10 +20,10 @@ function getAbsoluteTop(elem) {
   var $storyTogether = document.getElementById("story-together");
 
   var $jyThumb = document.getElementById("jaeyoung-thumb");
-  var $jyIcon = $jyThumb.children[0];
+  // var $jyIcon = $jyThumb.children[0];
   var $jyContents = Array.from(document.getElementsByClassName("content jaeyoung"));
   var $syThumb = document.getElementById("soyoung-thumb");
-  var $syIcon = $syThumb.children[0];
+  // var $syIcon = $syThumb.children[0];
   var $syContents = Array.from(document.getElementsByClassName("content soyoung"));
   var $togetherContent = document.getElementsByClassName("content together")[0];
 
@@ -32,6 +32,7 @@ function getAbsoluteTop(elem) {
 
   // 동적으로 Dom 의 사이즈가 변경될 수 도 있으니 (이미지 로딩 등),
   // 그냥 매번 계산한다. 현대의 브라우져를 구동하는 단말기들은 생각보다 강력하다.
+  /*
   function updatePlayground(e) {
     // Playground Holder 의 위치를 정의
     var pgHolderPosition = getAbsolutePosition($pgHolder);
@@ -50,12 +51,12 @@ function getAbsoluteTop(elem) {
     } else {
       $body.classList.remove(storyEachToken);
       $body.classList.remove(storyAfterToken);
-     }
+    }
 
     var togetherContentTop = getAbsoluteTop($togetherContent);
 
     var jyTops = $jyContents.map(getAbsoluteTop);
-    var jyLevel = jyTops.findLastIndex(function(value) { return value < storyEachDecider; });
+    var jyLevel = jyTops.findLastIndex(function (value) { return value < storyEachDecider; });
     $jyIcon.classList.remove(...jyIconHolders);
     if (jyLevel < 0) {
       $jyThumb.style.display = "none";
@@ -75,7 +76,7 @@ function getAbsoluteTop(elem) {
     }
 
     var syTops = $syContents.map(getAbsoluteTop);
-    var syLevel = syTops.findLastIndex(function(value) { return value < storyEachDecider; });
+    var syLevel = syTops.findLastIndex(function (value) { return value < storyEachDecider; });
     $syIcon.classList.remove(...syIconHolders);
     if (syLevel < 0) {
       $syThumb.style.display = "none";
@@ -94,25 +95,26 @@ function getAbsoluteTop(elem) {
       $syIcon.classList.add(syIconHolders[syLevel]);
     }
   }
+  */
 
   var $photosetRows = Array.from(document.getElementsByClassName("photoset-row"));
   var photoMargin = 2;
   function resizeImages(e) {
-    $photosetRows.forEach(function($row) {
+    $photosetRows.forEach(function ($row) {
       var $photoSet = $row.parentNode,
-          wholeWidth = $photoSet.offsetWidth,
-          n = $row.children.length,
-          exactWidth = wholeWidth - (n - 1) * 2 * photoMargin,
-          $images = [],
-          totalRatio = 0;
+        wholeWidth = $photoSet.offsetWidth,
+        n = $row.children.length,
+        exactWidth = wholeWidth - (n - 1) * 2 * photoMargin,
+        $images = [],
+        totalRatio = 0;
 
-      Array.from($row.children).forEach(function($figure) {
+      Array.from($row.children).forEach(function ($figure) {
         var image = $figure.children[0].children[0];
         totalRatio += parseFloat(image.getAttribute("data-ratio"));
         $images.push(image);
       });
 
-      $images.forEach(function($image) {
+      $images.forEach(function ($image) {
         var ratio = parseFloat($image.getAttribute("data-ratio"));
         var width = exactWidth * ratio / totalRatio;
         $image.width = width;
@@ -129,33 +131,54 @@ function getAbsoluteTop(elem) {
   var throttler;
   function throttle(e, func) {
     if (!throttler) {
-      throttler = setTimeout(function() {
+      throttler = setTimeout(function () {
         throttler = null;
         func(e)
       }, 66) // 15fps
     }
   }
 
-  document.addEventListener("scroll", function(e) {
-    throttle(e, updatePlayground);
+  document.addEventListener("scroll", function (e) {
+    // throttle(e, updatePlayground);
   });
 
-  window.addEventListener("resize", function(e) {
-    throttle(e, function(e2) {
+  window.addEventListener("resize", function (e) {
+    throttle(e, function (e2) {
       resizeImages(e2);
-      updatePlayground(e2);
+      // updatePlayground(e2);
     });
   });
 
-  document.addEventListener("DOMContentLoaded", function(e) {
-    throttle(e, function(e2) {
+  document.addEventListener("DOMContentLoaded", function (e) {
+    throttle(e, function (e2) {
       resizeImages(e2);
-      updatePlayground(e2);
+      // updatePlayground(e2);
     });
+  });
+
+  function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 0;
+      console.log('reveals.length: ', reveals.lengt)
+
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+
+  document.addEventListener("scroll", function (e) {
+    throttle(e, reveal);
   });
 
   // goto
-  document.addEventListener('click', function(e) {
+  document.addEventListener('click', function (e) {
     if (!e.target) { return }
 
     var $a = e.target.closest('a');
