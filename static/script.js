@@ -163,7 +163,7 @@ function getAbsoluteTop(elem) {
       var windowHeight = window.innerHeight;
       var elementTop = reveals[i].getBoundingClientRect().top;
       var elementVisible = 0;
-      console.log('reveals.length: ', reveals.lengt)
+      console.log('reveals.length: ', reveals.length)
 
       if (elementTop < windowHeight - elementVisible) {
         reveals[i].classList.add("active");
