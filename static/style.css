@@ -19,7 +19,8 @@
   );
   --photoset-item-margin: 2px;
   --pink-background: rgba(241, 232, 223, 1);
-  --pink-color: rgb(32, 66, 49);
+  /* --pink-color: rgb(32, 66, 49); */
+  --pink-color: rgb(85, 78, 78);
 }
 
 html {
@@ -396,6 +397,8 @@ section .clearfix:after {
 
 #welcome p {
   font-size: .8rem;
+  color: rgb(85, 78, 78);
+  /* rgb(85, 78, 78) */
   line-height: 1.2rem;
   margin: 0;
   text-align: center;
@@ -551,6 +554,7 @@ section .clearfix:after {
 .photoset img {
   max-width: 100%;
   display: block;
+  object-fit: cover;
 }
 
 .photoset figure {
