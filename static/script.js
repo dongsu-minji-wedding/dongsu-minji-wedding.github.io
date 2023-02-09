@@ -123,7 +123,7 @@ function getAbsoluteTop(elem) {
 
         var parent = $image.parentNode;
         parent.dataset.pswpWidth = wholeWidth;
-        parent.dataset.pswpHeight = wholeWidth / ratio;
+        parent.dataset.pswpHeight = wholeWidth * 1.5 / ratio;
       });
     });
   }

@@ -244,21 +244,22 @@ section .clearfix:after {
   box-sizing: border-box;
 }
 
-#front a.go-to-wedding {
+#wedding-info a.go-to-wedding-photo {
   display: block;
   font-size: .8rem;
   line-height: 1.4rem;
-  width: 3rem;
+  width: 4rem;
   height: 1.4rem;
+  text-align: center;
 
   padding-top: 2.2rem;
 
   position: absolute;
-  bottom: 15.5vh;
-  left: 15%;
+  top: 0vh;
+  left: 10%;
 }
 
-#front a.go-to-wedding img {
+#wedding-info a.go-to-wedding-photo img {
   display: block;
   position: absolute;
   top: 10px;
@@ -268,21 +269,47 @@ section .clearfix:after {
   color: #fff;
 }
 
-#front a.go-to-wedding-info {
+#wedding-info a.go-to-wedding-couple {
   display: block;
   font-size: .8rem;
   line-height: 1.4rem;
-  width: 3rem;
+  width: 4rem;
   height: 1.4rem;
+  text-align: center;
 
   padding-top: 2.2rem;
 
   position: absolute;
-  bottom: 15.5vh;
-  right: 15%;
+  top: 0vh;
+  left: 30%;
 }
 
-#front a.go-to-wedding-info img {
+#wedding-info a.go-to-wedding-couple img {
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 1.5rem;
+  color: #fff;
+}
+
+#wedding-info a.go-to-welcome {
+  display: block;
+  font-size: .8rem;
+  line-height: 1.4rem;
+  width: 4rem;
+  height: 1.4rem;
+  text-align: center;
+
+  padding-top: 2.2rem;
+
+  position: absolute;
+  top: 0vh;
+  right: 10%;
+}
+
+#wedding-info a.go-to-welcome img {
   display: block;
   position: absolute;
   top: 10px;
@@ -461,7 +488,7 @@ section .clearfix:after {
   color: rgb(85, 78, 78);
   /* rgb(85, 78, 78) */
   line-height: 1.5rem;
-  margin: 10px;
+  margin: 20px;
   text-align: center;
 }
 
