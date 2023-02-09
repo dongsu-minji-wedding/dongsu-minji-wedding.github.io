@@ -482,12 +482,11 @@ section .clearfix:after {
 }
 
 #welcome p {
-  font-size: 1.2rem;
+  font-size: 1.0rem;
   font-family: 'GangwonEdu_OTFBoldA';
   font-weight: 700;
   color: rgb(85, 78, 78);
-  /* rgb(85, 78, 78) */
-  line-height: 2.0rem;
+  line-height: 1.6rem;
   margin: 25px;
   text-align: center;
 }
