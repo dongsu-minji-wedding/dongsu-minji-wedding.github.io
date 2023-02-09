@@ -255,7 +255,7 @@ section .clearfix:after {
   padding-top: 2.2rem;
 
   position: absolute;
-  top: 0vh;
+  top: 5vh;
   left: 10%;
 }
 
@@ -280,7 +280,7 @@ section .clearfix:after {
   padding-top: 2.2rem;
 
   position: absolute;
-  top: 0vh;
+  top: 5vh;
   left: 30%;
 }
 
@@ -305,7 +305,7 @@ section .clearfix:after {
   padding-top: 2.2rem;
 
   position: absolute;
-  top: 0vh;
+  top: 5vh;
   right: 10%;
 }
 
@@ -487,8 +487,8 @@ section .clearfix:after {
   font-weight: 700;
   color: rgb(85, 78, 78);
   /* rgb(85, 78, 78) */
-  line-height: 1.5rem;
-  margin: 20px;
+  line-height: 2.0rem;
+  margin: 25px;
   text-align: center;
 }
 
