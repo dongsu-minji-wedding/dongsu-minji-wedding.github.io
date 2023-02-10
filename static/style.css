@@ -532,8 +532,20 @@ section .clearfix:after {
   text-align: center;
 }
 
+#announcement p {
+  word-break: keep-all;
+  font-size: 1.1rem;
+  font-family: 'GangwonEdu_OTFBoldA';
+  font-weight: 700;
+  color: rgb(85, 78, 78);
+  line-height: 1.6rem;
+  margin: 25px;
+  text-align: center;
+}
+
 #location {
   padding: 5vh 100px;
+  text-align: center;
 }
 
 #location h4 {
@@ -582,7 +594,7 @@ section .clearfix:after {
 
 
 #location ul li a {
-  display: block;
+  display: inline-block;
   width: 100%;
   text-align: center;
   color: #ffffff;
@@ -595,6 +607,18 @@ section .clearfix:after {
 #location ul li a:hover {
   background: #0c7c44;
   border: 1px solid #4f4f4f;
+}
+
+#location .outer {
+  display: inline-block;
+  margin: 0 auto 5vh;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #204231;
+  color: #ffffff;
+  line-height: 1rem;
+  padding: .25rem .5rem;
+  font-size: .8rem;
+  cursor: pointer;
 }
 
 
