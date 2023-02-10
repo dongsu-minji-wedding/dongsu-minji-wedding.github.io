@@ -294,6 +294,31 @@ section .clearfix:after {
   color: #fff;
 }
 
+#wedding-info a.go-to-announcement {
+  display: block;
+  font-size: .8rem;
+  line-height: 1.4rem;
+  width: 4rem;
+  height: 1.4rem;
+  text-align: center;
+
+  padding-top: 2.2rem;
+
+  position: absolute;
+  top: 5vh;
+  right: 30%;
+}
+
+#wedding-info a.go-to-announcement img {
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 1.5rem;
+  color: #fff;
+}
+
 #wedding-info a.go-to-welcome {
   display: block;
   font-size: .8rem;
@@ -647,6 +672,7 @@ section .clearfix:after {
   max-width: 100%;
   display: block;
   object-fit: cover;
+  object-position: 50% 35%;
 }
 
 .photoset figure {
