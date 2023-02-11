@@ -294,7 +294,7 @@ section .clearfix:after {
   color: #fff;
 }
 
-#wedding-info a.go-to-announcement {
+#wedding-info a.go-to-location {
   display: block;
   font-size: .8rem;
   line-height: 1.4rem;
@@ -309,7 +309,7 @@ section .clearfix:after {
   left: 50%;
 }
 
-#wedding-info a.go-to-announcement img {
+#wedding-info a.go-to-location img {
   display: block;
   position: absolute;
   top: 10px;
@@ -319,7 +319,7 @@ section .clearfix:after {
   color: #fff;
 }
 
-#wedding-info a.go-to-location {
+#wedding-info a.go-to-announcement {
   display: block;
   font-size: .8rem;
   line-height: 1.4rem;
@@ -334,7 +334,7 @@ section .clearfix:after {
   left: 70%;
 }
 
-#wedding-info a.go-to-location img {
+#wedding-info a.go-to-announcement img {
   display: block;
   position: absolute;
   top: 10px;
@@ -535,8 +535,8 @@ section .clearfix:after {
   line-height: 1.6rem;
   margin: 25px;
   text-align: left;
-  margin-left: 7vh;
-  margin-right: 7vh;
+  margin-left: 6vh;
+  margin-right: 6vh;
 }
 
 #third-background {
@@ -570,7 +570,7 @@ section .clearfix:after {
 }
 
 #location b {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 #location .tel {
@@ -637,8 +637,8 @@ section .clearfix:after {
   line-height: 1.6rem;
   margin: 25px;
   text-align: left;
-  margin-left: 7vh;
-  margin-right: 7vh;
+  margin-left: 6vh;
+  margin-right: 6vh;
 }
 
 #congratulatory {
@@ -683,16 +683,16 @@ section .clearfix:after {
 
 #thanks-to {
   padding: 5vh 0;
-  font-size: .8rem;
+  font-size: .7rem;
   text-align: center;
 }
 
-#thanks-to .rose {
-  color: #FF0080;
+#thanks-to .yellow {
+  color: #9da151;
 }
 
 #thanks-to a {
-  display: block;
+  display: inline;
 }
 
 #thanks-to .share {
