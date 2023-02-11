@@ -563,7 +563,7 @@ section .clearfix:after {
 }
 
 #location p {
-  font-size: .8rem;
+  font-size: 0.9rem;
   line-height: 1.2rem;
   margin: 0;
   text-align: center;
@@ -626,13 +626,15 @@ section .clearfix:after {
 
 #announcement p {
   word-break: keep-all;
-  font-size: 1.1rem;
-  font-family: 'NanumSquareRound';
+  font-size: 1.0rem;
+  font-family: 'GangwonEdu_OTFBoldA';
   font-weight: 700;
   color: rgb(85, 78, 78);
   line-height: 1.6rem;
   margin: 25px;
-  text-align: center;
+  text-align: left;
+  margin-left: 7vh;
+  margin-right: 7vh;
 }
 
 #congratulatory {
