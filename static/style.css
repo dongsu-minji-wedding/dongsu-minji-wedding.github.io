@@ -569,6 +569,10 @@ section .clearfix:after {
   text-align: center;
 }
 
+#location b {
+  font-size: 1.1rem;
+}
+
 #location .tel {
   text-decoration: underline;
   color: var(--pink-color);
