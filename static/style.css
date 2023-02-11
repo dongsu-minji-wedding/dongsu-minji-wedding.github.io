@@ -523,12 +523,12 @@ section .clearfix:after {
 }
 
 #wedding-couple h3 {
-  font-size: 0.9rem;
+  font-size: 1.0rem;
 }
 
 #wedding-couple p {
   word-break: keep-all;
-  font-size: 0.9rem;
+  font-size: 1.0rem;
   font-family: 'GangwonEdu_OTFBoldA';
   font-weight: 700;
   color: rgb(85, 78, 78);
@@ -548,6 +548,7 @@ section .clearfix:after {
 #location {
   padding: 5vh 100px;
   text-align: center;
+  font-family: 'NanumSquareRound';
 }
 
 #location h4 {
@@ -573,7 +574,7 @@ section .clearfix:after {
   color: var(--pink-color);
 }
 
-#location ul {
+/* #location ul {
   margin: 50px auto 0;
   padding: 0;
   width: 80%;
@@ -609,7 +610,7 @@ section .clearfix:after {
 #location ul li a:hover {
   background: #0c7c44;
   border: 1px solid #4f4f4f;
-}
+} */
 
 #location .outer {
   display: inline-block;
@@ -626,7 +627,7 @@ section .clearfix:after {
 #announcement p {
   word-break: keep-all;
   font-size: 1.1rem;
-  font-family: 'GangwonEdu_OTFBoldA';
+  font-family: 'NanumSquareRound';
   font-weight: 700;
   color: rgb(85, 78, 78);
   line-height: 1.6rem;
@@ -636,6 +637,7 @@ section .clearfix:after {
 
 #congratulatory {
   padding: 5vh 0;
+  font-family: 'NanumSquareRound';
 }
 
 #congratulatory h4 {
@@ -656,6 +658,7 @@ section .clearfix:after {
 
 #congratulatory table td .copy-btn {
   display: inline-block;
+  font-family: 'NanumSquareRound';
   border: 1px solid rgba(0, 0, 0, 0.1);
   background: #204231;
   color: #ffffff;
