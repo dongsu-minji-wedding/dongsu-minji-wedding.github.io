@@ -522,17 +522,21 @@ section .clearfix:after {
   color: rgb(30, 27, 27);
 }
 
+#wedding-couple h3 {
+  font-size: 0.9rem;
+}
+
 #wedding-couple p {
   word-break: keep-all;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   font-family: 'GangwonEdu_OTFBoldA';
   font-weight: 700;
   color: rgb(85, 78, 78);
   line-height: 1.6rem;
   margin: 25px;
   text-align: left;
-  margin-left: 3%;
-  margin-right: 3%;
+  margin-left: 7vh;
+  margin-right: 7vh;
 }
 
 #third-background {
