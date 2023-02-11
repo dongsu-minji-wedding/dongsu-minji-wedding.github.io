@@ -472,7 +472,8 @@ section .clearfix:after {
 
 
 #wedding-photo {
-  padding: 5vh 0 5vh;
+  /* padding: 5vh 0 5vh; */
+  padding: 5vh 0 0;
   font-size: .8rem;
   text-align: center;
 }
@@ -529,18 +530,15 @@ section .clearfix:after {
   color: rgb(85, 78, 78);
   line-height: 1.6rem;
   margin: 25px;
-  text-align: center;
+  text-align: left;
+  margin-left: 3%;
+  margin-right: 3%;
 }
 
-#announcement p {
-  word-break: keep-all;
-  font-size: 1.1rem;
-  font-family: 'GangwonEdu_OTFBoldA';
-  font-weight: 700;
-  color: rgb(85, 78, 78);
-  line-height: 1.6rem;
-  margin: 25px;
-  text-align: center;
+#third-background {
+  /* background: var(--main-background); */
+  background-color: cornsilk;
+  color: var(--main-color);
 }
 
 #location {
@@ -621,6 +619,16 @@ section .clearfix:after {
   cursor: pointer;
 }
 
+#announcement p {
+  word-break: keep-all;
+  font-size: 1.1rem;
+  font-family: 'GangwonEdu_OTFBoldA';
+  font-weight: 700;
+  color: rgb(85, 78, 78);
+  line-height: 1.6rem;
+  margin: 25px;
+  text-align: center;
+}
 
 #congratulatory {
   padding: 5vh 0;
@@ -772,8 +780,8 @@ body > a.share
   height: 3rem;
   border-radius: 1.5rem;
   bottom: .7rem;
-  /* right: -10rem; */
-  right: 0rem;
+  right: -10rem;
+  /* right: 0rem; */
   font-size: .6rem;
   text-align: center;
   transition: bottom .2s ease-in-out, right .2s ease-in-out;

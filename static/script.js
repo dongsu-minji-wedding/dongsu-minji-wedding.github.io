@@ -161,6 +161,7 @@ function getAbsoluteTop(elem) {
 
   function reveal() {
     var reveals = document.querySelectorAll(".reveal");
+    var storyEachToken = "on-story-each";
 
     for (var i = 0; i < reveals.length; i++) {
       var windowHeight = window.innerHeight;
@@ -169,8 +170,10 @@ function getAbsoluteTop(elem) {
 
       if (elementTop < windowHeight - elementVisible) {
         reveals[i].classList.add("active");
+        $body.classList.add(storyEachToken);
       } else {
         reveals[i].classList.remove("active");
+        $body.classList.remove(storyEachToken);
       }
     }
   }
