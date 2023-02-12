@@ -96,6 +96,46 @@ function getAbsoluteTop(elem) {
     }
   }
   */
+  // modal begin
+  // Get the modal
+  var modal_bride = document.getElementById("modal_bride");
+  var modal_groom = document.getElementById("modal_groom");
+
+  // Get the button that opens the modal
+  var btn_bride = document.getElementById("myBtn_bride");
+  var btn_groom = document.getElementById("myBtn_groom");
+
+  // Get the <span> element that closes the modal
+  var close_bride = document.getElementsByClassName("close_bride")[0];
+  var close_groom = document.getElementsByClassName("close_groom")[0];
+
+  // When the user clicks on the button, open the modal
+  btn_bride.onclick = function () {
+    modal_bride.style.display = "block";
+  }
+  btn_groom.onclick = function () {
+    modal_groom.style.display = "block";
+  }
+
+  // When the user clicks on <span> (x), close the modal
+  close_bride.onclick = function () {
+    modal_bride.style.display = "none";
+  }
+  close_groom.onclick = function () {
+    modal_groom.style.display = "none";
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function (event) {
+    if (event.target == modal_bride) {
+      modal_bride.style.display = "none";
+    }
+    if (event.target == modal_groom) {
+      modal_groom.style.display = "none";
+    }
+  };
+
+  // modal ends
 
   var $photosetRows = Array.from(document.getElementsByClassName("photoset-row"));
   var photoMargin = 2;

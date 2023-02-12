@@ -106,7 +106,7 @@
             </figure>
             <figure class="photoset-item">
                 <a href="./photos/ds-wedding/1-2.jpg">
-                  <img src="./static/placeholder-pink.png" data-ratio="2.2" data-src="./photos/ds-wedding/1-2.jpg" />
+                  <img src="./static/placeholder-pink.png" data-ratio="2.25" data-src="./photos/ds-wedding/1-2.jpg" />
                 </a>
             </figure>
           </div>
@@ -135,7 +135,7 @@
             </figure>
             <figure class="photoset-item">
                 <a href="./photos/ds-wedding/3-2.jpg">
-                  <img src="./static/placeholder-pink.png" data-ratio="2.2" data-src="./photos/ds-wedding/3-2.jpg" />
+                  <img src="./static/placeholder-pink.png" data-ratio="2.25" data-src="./photos/ds-wedding/3-2.jpg" />
                 </a>
             </figure>
           </div>
@@ -181,7 +181,7 @@
             </figure>
             <figure class="photoset-item">
                 <a href="./photos/ds-wedding/6-2.jpg">
-                  <img src="./static/placeholder-pink.png" data-ratio="2.2" data-src="./photos/ds-wedding/6-2.jpg" />
+                  <img src="./static/placeholder-pink.png" data-ratio="2.25" data-src="./photos/ds-wedding/6-2.jpg" />
                 </a>
             </figure>
           </div>
@@ -279,8 +279,7 @@
         &nbsp;&nbsp;예식 시간보다 조금 일찍 도착해 같이 사진 찍어요!📷
       </p>
       <p>
-        · 환경보호를 위하여 화환은 정중히 거절하고, <br />
-        &nbsp;&nbsp;마음만 받겠습니다.
+        · 환경보호를 위하여 화환은 정중히 사양합니다.
       </p>
       <p>
         · 주말에는 식장주변이 다소 혼잡하오니, <br />
@@ -294,22 +293,15 @@
 
       <table>
         <tr>
-          <td><b>신랑측</b></td>
           <td>
-            <span>토스뱅크 1000-1677-0030 (안동수)</span>
-          </td>
-          <td>
-            <button class="copy-btn" data-clipboard-text="1000-1677-0030">복사</button>
+            <span><button id="myBtn_groom" class="copy-btn">신랑측 계좌번호</button></span>
           </td>
         </tr>
         <tr>
-          <td><b>신부측</b></td>
           <td>
-            <span>카카오뱅크 3333-20404-2375 (김민지)</span>
+            <span><button id="myBtn_bride" class="copy-btn">신부측 계좌번호</button></span>
           </td>
-          <td>
-            <button class="copy-btn" data-clipboard-text="3333-20404-2375">복사</button>
-          </td>
+          <!-- <span>카카오뱅크 3333-20404-2375 (김민지)</span> -->
         </tr>
       </table>
     </section>
@@ -329,6 +321,46 @@
       <img src="./static/share-icon.svg" />
       공유
     </a>
+
+    <!-- The Modal -->
+    <div id="modal_groom" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close_groom">&times;</span>
+          <h3>신랑측</h3>
+        </div>
+        <div class="modal-body">
+          <p>
+            <span>토스뱅크 1000-1677-0030 (안동수)</span>
+            <button class="copy-btn" data-clipboard-text="100016770030">복사</button>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="modal_bride" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close_bride">&times;</span>
+          <h3>신부측</h3>
+        </div>
+        <div class="modal-body">
+          <p>
+            <span>카카오뱅크 3333-20404-2375 (김민지)</span>
+            <button class="copy-btn" data-clipboard-text="3333204042375">복사</button>
+          </p>
+          <p>
+            <span>신한은행 110-208-301978 (김홍대)</span>
+            <button class="copy-btn" data-clipboard-text="110208301978">복사</button>
+          </p>
+          <p>
+            <span>신한은행 110-215-830699 (최찬옥)</span>
+            <button class="copy-btn" data-clipboard-text="110215830699">복사</button>
+          </p>
+        </div>
+      </div>
+    </div>
 
     <script type="text/javascript" charset="UTF-8" src="./static/script.js"></script>
     <script type="text/javascript" charset="UTF-8" src="./static/clipboard.min.js"></script>
