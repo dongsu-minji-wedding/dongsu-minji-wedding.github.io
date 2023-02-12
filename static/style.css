@@ -1,53 +1,18 @@
-/* @import url('./pretendard.css'); */
 @import url('./toss-face.css');
 
-/* @font-face {
-    font-family: 'MapoFlowerIsland';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoFlowerIslandA.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-} */
-
 @font-face {
- font-family: 'NanumBarunGothic';
- font-style: normal;
- font-weight: 200;
- src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
- src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'GangwonEdu_OTFBoldA';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-family: 'GangwonEdu_OTFLightA';
+    src: url('./woff/GangwonEdu_OTFLightA.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'NanumSquareRound';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+    src: url('./woff/NanumSquareRound.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
-
-/* @font-face {
- font-family: 'NanumBarunGothic';
- font-style: normal;
- font-weight: 700;
- src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
- src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
-}
-
-@font-face {
- font-family: 'NanumBarunGothic';
- font-style: normal;
- font-weight: 300;
- src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
- src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
-}
-
-.nanumbarungothic * {
- font-family: 'NanumBarunGothic', sans-serif;
-} */
 
 :root {
   --main-background: rgba(215, 197, 197, 1);
@@ -75,9 +40,7 @@ html, body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  /* Pretendard 추천 글꼴 순서 */
-  /* font-family: NanumBarunGothic, Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif; */
-  font-family: NanumBarunGothic, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+  font-family: NanumSquareRound, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
   -webkit-overflow-scrolling: touch;
   overflow-y: scroll;
 }
@@ -509,7 +472,7 @@ section .clearfix:after {
 
 #welcome p {
   font-size: 1.1rem;
-  font-family: 'GangwonEdu_OTFBoldA';
+  font-family: 'GangwonEdu_OTFLightA';
   font-weight: 700;
   color: rgb(85, 78, 78);
   line-height: 1.6rem;
@@ -529,7 +492,7 @@ section .clearfix:after {
 #wedding-couple p {
   word-break: keep-all;
   font-size: 1.0rem;
-  font-family: 'GangwonEdu_OTFBoldA';
+  font-family: 'GangwonEdu_OTFLightA';
   font-weight: 700;
   color: rgb(85, 78, 78);
   line-height: 1.6rem;
@@ -631,7 +594,7 @@ section .clearfix:after {
 #announcement p {
   word-break: keep-all;
   font-size: 1.0rem;
-  font-family: 'GangwonEdu_OTFBoldA';
+  font-family: 'GangwonEdu_OTFLightA';
   font-weight: 700;
   color: rgb(85, 78, 78);
   line-height: 1.6rem;
