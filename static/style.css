@@ -494,7 +494,7 @@ section .clearfix:after {
   word-break: keep-all;
   font-size: 1.0rem;
   font-family: 'GangwonEdu_OTFLightA';
-  font-weight: 700;
+  font-weight: normal;
   color: rgb(85, 78, 78);
   line-height: 1.6rem;
   margin: 25px;
@@ -596,7 +596,7 @@ section .clearfix:after {
   word-break: keep-all;
   font-size: 1.0rem;
   font-family: 'GangwonEdu_OTFLightA';
-  font-weight: 700;
+  font-weight: normal;
   color: rgb(85, 78, 78);
   line-height: 1.6rem;
   margin: 25px;
