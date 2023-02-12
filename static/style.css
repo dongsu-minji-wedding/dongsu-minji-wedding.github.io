@@ -761,7 +761,7 @@ section .clearfix:after {
 /* Modal Header */
 .modal-header {
   padding: 15px 15px;
-  background-color: var(--main-background);
+  background-color: cornsilk;
   color: white;
 }
 
