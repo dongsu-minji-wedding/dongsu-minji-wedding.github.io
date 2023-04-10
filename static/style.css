@@ -2,14 +2,14 @@
 
 @font-face {
     font-family: 'GangwonEdu_OTFLightA';
-    src: url('./woff/GangwonEdu_OTFLightA.woff') format('woff');
+    src: url('https://storage.googleapis.com/mindong-wedding/static/woff/GangwonEdu_OTFLightA.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'NanumSquareRound';
-    src: url('./woff/NanumSquareRound.woff') format('woff');
+    src: url('https://storage.googleapis.com/mindong-wedding/static/woff/NanumSquareRound.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -99,7 +99,7 @@ section .clearfix:after {
   top: 0;
   bottom: 0;
   background-color: rgb(22, 17, 17);
-  background-image: url('./front.jpg');
+  background-image: url('https://storage.googleapis.com/mindong-wedding/static/front.jpg');
   background-repeat: no-repeat;
   background-position: bottom center;
 
