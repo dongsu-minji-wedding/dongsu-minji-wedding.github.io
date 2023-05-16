@@ -99,7 +99,7 @@ section .clearfix:after {
   top: 0;
   bottom: 0;
   background-color: rgb(22, 17, 17);
-  background-image: url('https://storage.googleapis.com/mindong-wedding/static/front.jpg');
+  background-image: url('./front.jpg');
   background-repeat: no-repeat;
   background-position: bottom center;
 
